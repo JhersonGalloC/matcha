@@ -1,5 +1,5 @@
 h1 {
-  color: #025157;
+  color: red;
   font-family: "alegreya", serif;
   font-size: 60px;
   margin-bottom: 24px;
@@ -26,4 +26,75 @@ input {
 }
 body {
   background-color: #fffbf7;
+  margin: 0px;
+}
+.header {
+  margin-top: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  font-size: 0;
+}
+.header > * {
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: middle;
+  height: 100%;
+  line-height: 45px;
+}
+
+.header li {
+  display: inline;
+  margin: 0 15px;
+  text-decoration: none;
+}
+.header lu {
+  padding: 0;
+}
+.logo_matcha {
+  width: 50px;
+}
+.imagen_matcha {
+  width: 20%;
+}
+.navbar {
+  width: 60%;
+  text-align: center;
+  color: #025157;
+  font-weight: 500;
+}
+.actions {
+  width: 20%;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 600;
+}
+.first-image {
+  width: 20%;
+}
+.second-image {
+  width: 70%;
+}
+.main {
+  text-align: center;
+}
+.main h1 {
+  font-family: "Alegreya", serif;
+  font-size: 48px;
+  font-weight: 900;
+  color: #67b54b;
+}
+.sing-in-button {
+  color: white;
+  background-color: #67b54b;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 0;
+  border-radius: 5px;
+}
+.sing-in-link {
+  color: #67b54b;
+  text-decoration: none;
 }
