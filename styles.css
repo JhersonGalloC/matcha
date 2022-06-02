@@ -23,6 +23,7 @@ button {
   left: 0;
   right: 0;
   background-color: #fffbf7;
+  z-index: 1;
 }
 
 .header {
@@ -105,6 +106,20 @@ button {
   color: #025157;
 }
 
+.main form input{
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.main form button{
+  margin-left: -5px;
+  border-radius: 5px;
+  border: none;
+  padding: 16px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0%;
+}
 .publish {
   display: flex;
   width: 70%;
@@ -151,21 +166,59 @@ button {
 
 .features {
   display: grid;
-  padding: 5% 10%;
   grid-template: repeat(2, 1fr) / repeat(2, 1fr);
   height: 600px;
   background-color: #025157;
+  padding: 5% 10%;
+
+  /* se va a borrar al final */
+  margin-bottom: 200px;
 }
 
 .feature-card {
-  padding: 0 15px 20px;
+  margin: 0 15px 20px;
 }
 
 .feature-content {
-  background-color: #fffbf7;
+  background-color: #fff;
   border-radius: 10px;
   height: 100%;
   display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.feature-content .feature-text {
+  flex: 2;
+  padding: 15px 20px;
+}
+
+.feature-content .feature-text h3 {
+  font-size: 24px;
+  color: #343434;
+  font-weight: 400;
+}
+.feature-content .feature-text p {
+  font-size: 16px;
+  color: #7e7e7e;
+  font-weight: 400;
+}
+.feature-content .feature-text a {
+  font-size: 16px;
+  color: #67b54b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.feature-text figure {
+  margin-left: 0;
+}
+
+.feature-text figure img {
+  height: 30px;
+}
+.feature-content .feature-image {
+  flex: 1;
 }
 
 .feature-image figure {
@@ -175,3 +228,54 @@ button {
 .feature-image figure img {
   width: 100%;
 }
+
+.movimiento {
+  transition: width 1s;
+}
+
+.movimiento:hover {
+  width: 150%;
+}
+
+.container .card-body a {
+  background-color: #025157;
+}
+
+/* MEDIA QUERIEES */
+
+@media screen and (max-width: 425px) {
+
+  .main form{
+    margin-bottom: 25px;
+  }
+
+  .color-gris-seccion-inicial{
+    margin: 0;
+  }
+
+  .first-image{
+    width: 70%;
+  }
+  .second-image{
+    width: 100%;
+  }
+  .navbar, .actions{
+    display: none;
+  }
+  .main{
+    margin-top: 130px;
+  }
+  }
+  .main h1{
+    font-size: 30px;
+  }
+  .publish{
+    flex-direction: column;
+    margin: 15px auto;
+    width: 90%;
+  }
+  
+  .features{
+    height: fit-content;
+    grid-template: repeat(4, 1fr) / 1fr;
+  }
